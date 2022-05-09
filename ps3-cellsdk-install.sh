@@ -18,8 +18,8 @@
 #
 # RUN AS ROOT
 #
-cp -v rpm.gpg/RPM-GPG-KEY-cellsdk /etc/pki/rpm-gpg/RPM-GPG-KEY-cellsdk
-cp -v rpm.gpg/RPM-GPG-KEY-cellsdk-open /etc/pki/rpm-gpg/RPM-GPG-KEY-cellsdk-open
+cp -v rpm-gpg/RPM-GPG-KEY-cellsdk /etc/pki/rpm-gpg/RPM-GPG-KEY-cellsdk
+cp -v rpm-gpg/RPM-GPG-KEY-cellsdk-open /etc/pki/rpm-gpg/RPM-GPG-KEY-cellsdk-open
 cp -v yum.repos.d/cellsdk-RHEL.repo /etc/yum.repos.d/cellsdk-RHEL.repo
 
 yum clean all
