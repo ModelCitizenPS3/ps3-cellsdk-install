@@ -1,41 +1,41 @@
 [CellSDK-Devel-RHEL-ppc64]
 name=IBM Cell SDK (CellSDK-Devel-RHEL, ppc64)
-baseurl=http://ps3linux.net/ps3_cellsdk/PS3FILEZ/cellsdk-devel-rhel_3.1.0.0.0/ppc64/
+baseurl=http://ps3linux.net/ps3_cellsdk/cellsdk-devel-rhel_3.1.0.0.0/ppc64/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-cellsdk
 
 [CellSDK-Devel-RHEL-cbea]
 name=IBM Cell SDK (CellSDK-Devel-RHEL, cbea)
-baseurl=http://ps3linux.net/ps3_cellsdk/PS3FILEZ/cellsdk-devel-rhel_3.1.0.0.0/cbea/
+baseurl=http://ps3linux.net/ps3_cellsdk/cellsdk-devel-rhel_3.1.0.0.0/cbea/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-cellsdk
 
 [CellSDK-Extras-RHEL-ppc64]
 name=IBM Cell SDK (CellSDK-Extras-RHEL, ppc64)
-baseurl=http://ps3linux.net/ps3_cellsdk/PS3FILEZ/cellsdk-extras-rhel_3.1.0.0.0/ppc64/
+baseurl=http://ps3linux.net/ps3_cellsdk/cellsdk-extras-rhel_3.1.0.0.0/ppc64/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-cellsdk
 
 [CellSDK-Extras-RHEL-cbea]
 name=IBM Cell SDK (CellSDK-Extras-RHEL, cbea)
-baseurl=http://ps3linux.net/ps3_cellsdk/PS3FILEZ/cellsdk-extras-rhel_3.1.0.0.0/cbea/
+baseurl=http://ps3linux.net/ps3_cellsdk/cellsdk-extras-rhel_3.1.0.0.0/cbea/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-cellsdk
 
 [CellSDK-Open-RHEL-ppc64]
 name=IBM Cell SDK (CellSDK-Open-RHEL, ppc64)
-baseurl=http://ps3linux.net/ps3_cellsdk/PS3FILEZ/cellsdk-open-rhel_3.1.0.0.0/ppc64/
+baseurl=http://ps3linux.net/ps3_cellsdk/cellsdk-open-rhel_3.1.0.0.0/ppc64/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-cellsdk-open
 
 [CellSDK-Open-RHEL-cbea]
 name=IBM Cell SDK (CellSDK-Open-RHEL, cbea)
-baseurl=http://ps3linux.net/ps3_cellsdk/PS3FILEZ/cellsdk-open-rhel_3.1.0.0.0/cbea/
+baseurl=http://ps3linux.net/ps3_cellsdk/cellsdk-open-rhel_3.1.0.0.0/cbea/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-cellsdk-open
