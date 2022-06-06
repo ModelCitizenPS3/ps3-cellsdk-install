@@ -27,7 +27,7 @@ yum makecache
 
 yum -y install numactl.ppc numactl.ppc64 numactl-devel.ppc numactl-devel.ppc64 netpbm-devel rsync sed tcl glibc-devel.ppc64
 yum -y groupinstall "Cell Runtime Environment" "Cell Development Tools" "Cell Development Libraries" "Cell Programming Examples"
-yum -y install alf-trace cell-spu-timing cellperfctr-driver cellperfctr-tools dacs-trace fdprpro trace blas blas-devel elfspe2 lapack lapack-devel libspe2 oprofile oprofile-devel libspe2-adabinding-devel libspe2-devel.ppc libspe2-devel.ppc64
+yum -y install alf-trace cell-spu-timing cellperfctr-driver cellperfctr-tools dacs-trace fdprpro trace blas blas-devel elfspe2 lapack lapack-devel libspe2 oprofile oprofile-devel libspe2-devel.ppc libspe2-devel.ppc64
 
 printf "\nREBOOT\n\n"
 
