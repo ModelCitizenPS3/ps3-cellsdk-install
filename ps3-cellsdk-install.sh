@@ -18,6 +18,11 @@
 #
 # RUN AS ROOT
 #
+if [ $(id -u) != 0 ]; then
+    printf "Please run script as root.\n"
+    exit 1
+fi
+
 cp -v rpm-gpg/RPM-GPG-KEY-cellsdk /etc/pki/rpm-gpg/RPM-GPG-KEY-cellsdk
 cp -v rpm-gpg/RPM-GPG-KEY-cellsdk-open /etc/pki/rpm-gpg/RPM-GPG-KEY-cellsdk-open
 cp -v yum.repos.d/cellsdk-RHEL.repo /etc/yum.repos.d/cellsdk-RHEL.repo
@@ -30,4 +35,6 @@ yum -y groupinstall "Cell Runtime Environment" "Cell Development Tools" "Cell De
 yum -y install alf-trace cell-spu-timing cellperfctr-driver cellperfctr-tools dacs-trace fdprpro trace blas blas-devel elfspe2 lapack lapack-devel libspe2 oprofile oprofile-devel libspe2-devel.ppc libspe2-devel.ppc64
 
 printf "\nREBOOT\n\n"
+
+exit 0
 
