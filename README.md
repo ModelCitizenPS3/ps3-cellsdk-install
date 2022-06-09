@@ -25,11 +25,11 @@ Script to install Cell SDK (RHEL) 3.1.0.0.0 in Fedora 12 (ppc64) on Playstation 
 ## NOTES
 This version of the Cell SDK (3.1.0.0.0) was designed for installation on an earlier Red Hat build (not Fedora 12 specifically). There are Fedora-specific versions of the Cell SDK available but they are earlier releases (made for earlier Fedoras). This version of the Cell SDK is the latest available and it works fine in Fedora 12 (ppc64) on Playstation 3 (OtherOS) - except for the default install script...
 
-The default Cell SDK 3.1.0.0.0 install script contained in package **cell-install-3.1.0-0.0.noarch.rpm** from the Cell SDK 3.1.0.0.0 install repositories (hosted at [http://ps3linux.net](ps3linux.net)) uses yum to install sets of packages from the Cell SDK 3.1.0.0.0 repos but is broken in Fedora 12 (ppc64). My script **ps3-cellsdk-install.sh** does the same thing, works in Fedora 12 (ppc64) on PS3, and was developed using the Cell SDK 3.1.0.0.0 install documentation.
+The default Cell SDK 3.1.0.0.0 install script contained in package **cell-install-3.1.0-0.0.noarch.rpm** from the Cell SDK 3.1.0.0.0 install repositories (hosted at http://ps3linux.net) uses yum to install sets of packages from the Cell SDK 3.1.0.0.0 repos but is broken in Fedora 12 (ppc64). My script **ps3-cellsdk-install.sh** does the same thing, works in Fedora 12 (ppc64) on PS3, and was developed using the Cell SDK 3.1.0.0.0 install documentation.
 
 One package NOT installed by my script (**cellide.rpm**) contains special settings for Cell Broadband Engine development in the Eclipse IDE. If you use Eclipse on your PS3 Linux Fedora 12 (ppc64) installation, consider manually installing the **cellide** package (after Cell SDK 3.1.0.0.0 installation): `sudo yum install cellide`.
 
-The online Cell SDK 3.1.0.0.0 repos used by this script are hosted by myself on my own jailbroke Playstation 3 Linux web server at [http://ps3linux.net](ps3linux.net). Yes I bought my PS3 its own domain name... and its up 24/7... because I'm nuts.
+The online Cell SDK 3.1.0.0.0 repos used by this script are hosted by myself on my own jailbroke Playstation 3 Linux web server at http://ps3linux.net. Yes I bought my PS3 its own domain name... and its up 24/7... because I'm nuts.
 
 If online Cell SDK 3.1.0.0.0 repos are down I'm probably just using my PS3 for gaming - sorry! Try running script **ps3-cellsdk-install** (as root) again later.
 
