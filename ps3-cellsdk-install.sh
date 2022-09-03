@@ -25,14 +25,12 @@ fi
 
 cp -v rpm-gpg/RPM-GPG-KEY-cellsdk /etc/pki/rpm-gpg/RPM-GPG-KEY-cellsdk
 cp -v rpm-gpg/RPM-GPG-KEY-cellsdk-open /etc/pki/rpm-gpg/RPM-GPG-KEY-cellsdk-open
-cp -v yum.repos.d/cellsdk-RHEL.repo /etc/yum.repos.d/cellsdk-RHEL.repo
+cp -v yum.repos.d/cellsdk.repo /etc/yum.repos.d/cellsdk.repo
 
 yum clean all
 yum makecache
 
-yum -y install numactl.ppc numactl.ppc64 numactl-devel.ppc numactl-devel.ppc64 netpbm-devel rsync sed tcl glibc-devel.ppc64
-yum -y groupinstall "Cell Runtime Environment" "Cell Development Tools" "Cell Development Libraries" "Cell Programming Examples"
-yum -y install alf-trace cell-spu-timing cellperfctr-driver cellperfctr-tools dacs-trace fdprpro trace blas blas-devel elfspe2 lapack lapack-devel libspe2 oprofile oprofile-devel libspe2-devel.ppc libspe2-devel.ppc64
+yum -y install numactl.ppc numactl.ppc64 numactl-devel.ppc numactl-devel.ppc64 netpbm-devel rsync sed tcl glibc.ppc glibc.ppc64 glibc-devel.ppc glibc-devel.ppc64 libspe2.ppc libspe2.ppc64 libspe2-devel.ppc libspe2-devel.ppc64 libspe2-manpages oprofile oprofile-devel elfspe2 ppu-binutils ppu-gcc ppu-gcc-c++ ppu-gcc-fortran ppu-gdb ppu-gcc-gnat spu-binutils spu-gcc spu-gcc-c++ spu-gcc-fortran spu-gdb spu-newlib spu-newlib-manpages cell-documentation cell-extras-documentation cell-spu-timing cellperfctr-driver cellperfctr-tools fdprpro trace cell-buildutils cell-demos cell-demos-source cell-examples cell-examples-source cell-libs cell-libs-devel cell-libs-source cell-tutorial cell-tutorial-source cell-compliance-tests cell-compliance-tests-source
 
 printf "\nREBOOT\n\n"
 
