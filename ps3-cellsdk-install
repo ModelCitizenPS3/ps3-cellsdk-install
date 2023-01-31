@@ -1,0 +1,32 @@
+#!/bin/bash
+#
+# Script to install IBM Cell SDK (Fedora) 3.0 in Fedora 12 (ppc64) on
+# Playstation 3. Adds a new repo config (with RPM-GPG-KEY files) to yum
+# package manager config dirs, then has yum rebuild its cache. Script assumes
+# yum is already configured with (functioning) standard Fedora 12 repos! Use
+# my other script (ps3-goodrepos) to configure Fedora 12 repos on your system
+# first if needed.
+# Happy SPUing!
+#
+# RUN AS ROOT
+#
+
+if [ $(id -u) != 0 ]; then
+    printf "Please run script as root.\n"
+    exit 1
+fi
+
+cp -fv rpm-gpg/RPM-GPG-KEY-cellsdk /etc/pki/rpm-gpg/RPM-GPG-KEY-cellsdk
+cp -fv rpm-gpg/RPM-GPG-KEY-cellsdk-open /etc/pki/rpm-gpg/RPM-GPG-KEY-cellsdk-open
+cp -fv yum.repos.d/cellsdk.repo /etc/yum.repos.d/cellsdk.repo
+
+yum clean all
+yum makecache
+
+yum -y groupinstall "Cell Runtime Environment" "Cell Development Tools" "Cell Development Libraries" "Cell Programming Examples"
+yum -y install wget rsync sed ed tcl tcl-devel tk tk-devel oprofile elfspe2 alf-trace cell-spu-timing cellperfctr-driver cellperfctr-tools dacs-trace glibc.ppc glibc.ppc64 glibc-devel.ppc glibc-devel.ppc64 numactl.ppc numactl.ppc64 numactl-devel.ppc numactl-devel.ppc64 netpbm.ppc netpbm.ppc64 netpbm-devel.ppc netpbm-devel.ppc64 libspe2.ppc libspe2.ppc64 libspe2-devel.ppc libspe2-devel.ppc64 spu-newlib
+
+printf "\nREBOOT\n\n"
+
+exit 0
+
