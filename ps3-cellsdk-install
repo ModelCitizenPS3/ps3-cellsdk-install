@@ -23,8 +23,9 @@ cp -fv yum.repos.d/cellsdk.repo /etc/yum.repos.d/cellsdk.repo
 yum clean all
 yum makecache
 
+yum -y install glibc.ppc glibc.ppc64 glibc-devel.ppc glibc-devel.ppc64 rsync sed ed tcl.ppc tcl.ppc64 tcl-devel.ppc tcl-devel.ppc64 tk.ppc tk.ppc64 tk-devel.ppc tk-devel.ppc64 wget
 yum -y groupinstall "Cell Runtime Environment" "Cell Development Tools" "Cell Development Libraries" "Cell Programming Examples"
-yum -y install wget rsync sed ed tcl tcl-devel tk tk-devel oprofile elfspe2 alf-trace cell-spu-timing cellperfctr-driver cellperfctr-tools dacs-trace glibc.ppc glibc.ppc64 glibc-devel.ppc glibc-devel.ppc64 numactl.ppc numactl.ppc64 numactl-devel.ppc numactl-devel.ppc64 netpbm.ppc netpbm.ppc64 netpbm-devel.ppc netpbm-devel.ppc64 libspe2.ppc libspe2.ppc64 libspe2-devel.ppc libspe2-devel.ppc64 spu-newlib
+yum -y install spu-binutils oprofile elfspe2 alf-trace cell-spu-timing cellperfctr-driver cellperfctr-tools dacs-trace numactl.ppc numactl.ppc64 numactl-devel.ppc numactl-devel.ppc64 netpbm.ppc netpbm.ppc64 netpbm-devel.ppc netpbm-devel.ppc64 libspe2.ppc libspe2.ppc64 libspe2-devel.ppc libspe2-devel.ppc64 libspe2-adabinding-devel spu-newlib
 
 printf "\nREBOOT\n\n"
 
