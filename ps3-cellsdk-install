@@ -1,12 +1,12 @@
 #!/bin/bash
 #
-# Script to install IBM Cell SDK (Fedora) 3.0 in Fedora 12 (ppc64) on
-# Playstation 3. Adds a new repo config (with RPM-GPG-KEY files) to yum
-# package manager config dirs, then has yum rebuild its cache. Script assumes
-# yum is already configured with (functioning) standard Fedora 12 repos! Use
-# my other script (ps3-goodrepos) to configure Fedora 12 repos on your system
-# first if needed.
-# Happy SPUing!
+# Installs IBM Cell/B.E. SDK 3.0 in Fedora 12 (ppc) on Playstation 3
+#
+# NOTE: Script assumes your Fedora 12 package manager (yum) has access
+# to working Fedora 12 software repositories. If not, then you should
+# clone/run my other script "ps3-goodrepos" first, which will configure
+# your system to access the online Fedora 12 repo archives. Then run this
+# script after. Happy SPUing :-)
 #
 # RUN AS ROOT
 #
@@ -23,9 +23,9 @@ cp -fv yum.repos.d/cellsdk.repo /etc/yum.repos.d/cellsdk.repo
 yum clean all
 yum makecache
 
-yum -y install glibc.ppc glibc.ppc64 glibc-devel.ppc glibc-devel.ppc64 rsync sed ed tcl.ppc tcl.ppc64 tcl-devel.ppc tcl-devel.ppc64 tk.ppc tk.ppc64 tk-devel.ppc tk-devel.ppc64 wget
 yum -y groupinstall "Cell Runtime Environment" "Cell Development Tools" "Cell Development Libraries" "Cell Programming Examples"
-yum -y install spu-binutils oprofile elfspe2 alf-trace cell-spu-timing cellperfctr-driver cellperfctr-tools dacs-trace numactl.ppc numactl.ppc64 numactl-devel.ppc numactl-devel.ppc64 netpbm.ppc netpbm.ppc64 netpbm-devel.ppc netpbm-devel.ppc64 libspe2.ppc libspe2.ppc64 libspe2-devel.ppc libspe2-devel.ppc64 libspe2-adabinding-devel spu-newlib ppu-gcc-gnat ppu-gcc-fortran spu-gcc-fortran alf-ide-template cell-xlc-ssc-cmp cell-xlc-ssc-help cell-xlc-ssc-lib cell-xlc-ssc-man cell-xlc-ssc-omp cell-xlc-ssc-rte cell-xlc-ssc-rte-lnk ppu-gcc-gnat alf-devel.ppc64 blas-devel.ppc64 ppu-mass-devel.ppc64 ppu-simdmath-devel.ppc64 alf-trace-devel.ppc alf-trace-devel.ppc64 dacs-trace-devel.ppc64 libfft-devel.ppc libmc-rand-devel.ppc pdt-devel.ppc64 spu-timer-devel trace.ppc trace.ppc64 trace-devel.ppc trace-devel.ppc64 alf.ppc64 alf-devel.ppc64 alf-ide-template alf-trace-devel.ppc alf-trace-devel.ppc64 alf-trace.ppc64 blas.ppc64 blas-devel.ppc64 dacs-trace-devel.ppc64 ppu-simdmath ppu-simdmath.ppc64 libfft libfft-devel libfft-examples-source fdprpro pdtr alf-hybrid-examples-source cell-compliance-tests cell-compliance-tests-source libfft-examples-source spu-timer-devel.ppc cell-libs-devel.ppc64
+yum -y install expat expat.ppc64 rsync sed tcl wget ed alf-trace-devel dacs-trace-devel libfft-devel libmc-rand-devel pdt-devel trace-devel cell-xlc-ssc-cmp cell-xlc-ssc-help cell-xlc-ssc-lib cell-xlc-ssc-man cell-xlc-ssc-omp cell-xlc-ssc-rte cell-xlc-ssc-rte-lnk ppu-gcc-fortran ppu-gcc-gnat ppu-gcc43 ppu-gcc43-c++ ppu-gcc43-fortran spu-gcc-fortran spu-gcc43 spu-gcc43-c++ spu-gcc43-fortran alf-hybrid-examples-source cell-compliance-tests cell-compliance-tests-source libfft-examples-source libfft alf-trace cell-spu-timing cellperfctr-driver cellperfctr-tools dacs-trace fdprpro trace elfspe2 netpbm netpbm-devel numactl numactl-devel libspe2 libspe2-devel libspe2.ppc64 libspe2-devel.ppc64 glibc glibc-devel glibc.ppc64 glibc-devel.ppc64 libstdc++ libstdc++-devel libstdc++.ppc64 libstdc++-devel.ppc64 libspe2-adabinding-devel.ppc64 libspe2man oprofile oprofile-gui tcl.ppc64 tk.ppc64 ppu-binutils spu-binutils spu-newlib dacs.ppc64 dacs-devel.ppc64 ppu-simdmath
+#numactl.ppc64 numactl-devel.ppc64 netpbm.ppc64 netpbm-devel.ppc64 alf-devel.ppc64 blas-devel.ppc64 ppu-mass-devel.ppc64 ppu-simdmath-devel.ppc64 alf-trace-devel.ppc64 alf.ppc64 alf-trace-devel.ppc64 alf-trace.ppc64 blas.ppc64 blas-devel.ppc64 dacs-trace-devel.ppc64 ppu-simdmath.ppc64 cell-libs-devel.ppc64
 
 printf "\nREBOOT\n\n"
 
