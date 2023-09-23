@@ -20,7 +20,7 @@ Script to install Cell SDK 3.0 in Fedora 12 (ppc) on Playstation 3 (OtherOS)
 3. Enter repo dir: `cd ps3-cellsdk-install/`
 4. Run script with root privileges: `sudo ./ps3-cellsdk-install.sh`
 5. Reboot PS3 (a new service got installed - **elfspe2** - allows you to run SPU programs from command prompt)
-6. Look in `/opt/cell` for (most) Cell SDK content - happy SPUing
+6. Look in `/opt` for (most) Cell SDK content - happy SPUing
 
 ## NOTES
 This version of the Cell SDK (3.0) was designed for installation on an earlier Fedora release (9, specifically), but it works fine in Fedora 12 (ppc) with no/minimal headaches.
