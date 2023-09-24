@@ -1,6 +1,6 @@
 [ps3linux]
 name=ps3linux repo
 baseurl=http://www.ps3linux.net/ps3linux-repo/
-enabled=1
+enabled=0
 gpgcheck=0
 
