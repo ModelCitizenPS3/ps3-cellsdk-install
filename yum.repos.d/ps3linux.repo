@@ -4,3 +4,9 @@ baseurl=http://www.ps3linux.net/ps3linux-repo/
 enabled=0
 gpgcheck=0
 
+[ps3linux-SRPMS]
+name=ps3linux SRPMS repo
+baseurl=http://www.ps3linux.net/ps3linux-repo/SRPMS/
+enabled=0
+gpgcheck=0
+
