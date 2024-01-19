@@ -30,28 +30,28 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-cellsdk
 [CellSDK-Devel-RHEL-ppc64]
 name=IBM Cell SDK (CellSDK-Devel-RHEL, ppc64)
 baseurl=http://www.ps3linux.net/cellsdk-repos/cellsdk-devel-rhel_3.1.0.0.0/ppc64/
-enabled=0
+enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-cellsdk
 
 [CellSDK-Devel-RHEL-cbea]
 name=IBM Cell SDK (CellSDK-Devel-RHEL, cbea)
 baseurl=http://www.ps3linux.net/cellsdk-repos/cellsdk-devel-rhel_3.1.0.0.0/cbea/
-enabled=0
+enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-cellsdk
 
 [CellSDK-Extras-RHEL-ppc64]
 name=IBM Cell SDK (CellSDK-Extras-RHEL, ppc64)
 baseurl=http://www.ps3linux.net/cellsdk-repos/cellsdk-extras-rhel_3.1.0.0.0/ppc64/
-enabled=0
+enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-cellsdk
 
 [CellSDK-Extras-RHEL-cbea]
 name=IBM Cell SDK (CellSDK-Extras-RHEL, cbea)
 baseurl=http://www.ps3linux.net/cellsdk-repos/cellsdk-extras-rhel_3.1.0.0.0/cbea/
-enabled=0
+enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-cellsdk
 
