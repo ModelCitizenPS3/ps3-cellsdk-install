@@ -23,11 +23,10 @@ Script to install Cell SDK 3.1 in Fedora 12 (ppc) on Playstation 3 (OtherOS)
 6. Look in `/opt` for (most) Cell SDK content - happy SPUing
 
 ## NOTES
-This version of the Cell SDK (3.1) was designed for installation on an Fedora/RHEL releases, but it works fine in Fedora 12 (ppc) with no headaches. The default Cell SDK install script contained in package **cell-install-3.1.0-0.0.noarch.rpm** from the Cell SDK 3.1 install repositories (hosted at [ps3linux.net/cellsdk-repos](http://www.ps3linux.net/cellsdk-repos)) uses yum to install sets of packages from the Cell SDK repos but is wonky in Fedora 12. My script **ps3-cellsdk-install.sh** does the same thing and was developed using the Cell SDK 3.1 install documentation (and my own experience using the SDK on the PS3).
+This version of the Cell SDK (3.1) was designed for installation on an earlier Fedora/RHEL release, but it works fine in Fedora 12 (ppc) with no headaches. The default Cell SDK install script contained in package **cell-install-3.1.0-0.0.noarch.rpm** from the Cell SDK 3.1 install repositories (hosted at [ps3linux.net/cellsdk-repos](http://www.ps3linux.net/cellsdk-repos)) uses yum to install sets of packages from the Cell SDK repos but is wonky in Fedora 12. My script **ps3-cellsdk-install.sh** does the same thing and was developed using the Cell SDK 3.1 install documentation (and my own experience using the SDK on the PS3).
 
 The online Cell SDK repos used by this script are hosted by myself on my own jailbroke Playstation 3 Linux web server: [ps3linux.net](http://www.ps3linux.net). Yes, I bought my PS3 its own domain... and its up 24/7... you're welcome :-)
 
 If online Cell SDK repos are down/unreachable I'm probably just using my PS3 for gaming (can't run Apache in GameOS) - sorry! Try running script again later.
 
 ### The Model Citizen
-
