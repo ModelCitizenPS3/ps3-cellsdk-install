@@ -11,7 +11,7 @@ baseurl=http://www.ps3linux.net/cellsdk-repos/CellSDK-Devel-Fedora_3.0.0.1.0/cbe
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-cellsdk
-exclude=cellide
+exclude=cellide pdt-module
 
 [CellSDK-Extras-Fedora-ppc64]
 name=IBM Cell SDK (CellSDK-Extras-Fedora, ppc64)
